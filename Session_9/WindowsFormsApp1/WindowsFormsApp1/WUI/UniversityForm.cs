@@ -35,9 +35,8 @@ namespace WindowsFormsApp1.WUI {
             Close();
         }
 
-        private void ctrlName_EditValueChanged(object sender, EventArgs e) {
+        private void button1_Click(object sender, EventArgs e) {
 
-            // Example on Edit Value Changed -> triggering another event
             if (ctrlnstituteName.EditValue.ToString().Length > 0) {
 
                 // 1. MODIFY THE OBJECT STUDENT
@@ -45,23 +44,6 @@ namespace WindowsFormsApp1.WUI {
 
                 NewUniversity.YearsInService = Convert.ToInt32(ctrlYearsInService.EditValue);
 
-                // 2. CLOSE THE FORM!
-
-                DialogResult = DialogResult.OK;
-                Close();
-            }
-            else {
-
-                MessageBox.Show("Please insert the Institute Name!");
-            }
-        }
-
-        private void button1_Click(object sender, EventArgs e) {
-
-            if (ctrlnstituteName.EditValue.ToString().Length > 0) {
-
-                // 1. MODIFY THE OBJECT STUDENT
-               
 
                 // 2. CLOSE THE FORM!
 
