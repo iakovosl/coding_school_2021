@@ -36,6 +36,7 @@ namespace WindowsFormsApp1 {
             this.ctrlDeserialize = new System.Windows.Forms.Button();
             this.ctrlAddUniversity = new System.Windows.Forms.Button();
             this.ctrlInstituteList = new DevExpress.XtraEditors.ListBoxControl();
+            this.ctrlSerializeUni = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ctrlStudentList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ctrlInstituteList)).BeginInit();
             this.SuspendLayout();
@@ -155,11 +156,22 @@ namespace WindowsFormsApp1 {
             this.ctrlInstituteList.TabIndex = 16;
             this.ctrlInstituteList.SelectedIndexChanged += new System.EventHandler(this.ctrlInstituteList_SelectedIndexChanged);
             // 
+            // ctrlSerializeUni
+            // 
+            this.ctrlSerializeUni.Location = new System.Drawing.Point(645, 226);
+            this.ctrlSerializeUni.Name = "ctrlSerializeUni";
+            this.ctrlSerializeUni.Size = new System.Drawing.Size(143, 32);
+            this.ctrlSerializeUni.TabIndex = 17;
+            this.ctrlSerializeUni.Text = "Serialize to Uni Json";
+            this.ctrlSerializeUni.UseVisualStyleBackColor = true;
+            this.ctrlSerializeUni.Click += new System.EventHandler(this.ctrlSerializeUni_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 502);
+            this.Controls.Add(this.ctrlSerializeUni);
             this.Controls.Add(this.ctrlInstituteList);
             this.Controls.Add(this.ctrlAddUniversity);
             this.Controls.Add(this.ctrlDeserialize);
@@ -195,6 +207,7 @@ namespace WindowsFormsApp1 {
         private System.Windows.Forms.Button ctrlDeserialize;
         private System.Windows.Forms.Button ctrlAddUniversity;
         private DevExpress.XtraEditors.ListBoxControl ctrlInstituteList;
+        private System.Windows.Forms.Button ctrlSerializeUni;
     }
 }
 

@@ -34,6 +34,7 @@ namespace WindowsFormsApp1.WUI {
             this.button5 = new System.Windows.Forms.Button();
             this.ctrlAddStudent = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.ctrlSave = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ctrlnstituteName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ctrlYearsInService.Properties)).BeginInit();
             this.SuspendLayout();
@@ -131,11 +132,22 @@ namespace WindowsFormsApp1.WUI {
             this.button3.Text = "Add Course...";
             this.button3.UseVisualStyleBackColor = true;
             // 
+            // ctrlSave
+            // 
+            this.ctrlSave.Location = new System.Drawing.Point(73, 221);
+            this.ctrlSave.Name = "ctrlSave";
+            this.ctrlSave.Size = new System.Drawing.Size(109, 32);
+            this.ctrlSave.TabIndex = 18;
+            this.ctrlSave.Text = "Save";
+            this.ctrlSave.UseVisualStyleBackColor = true;
+            this.ctrlSave.Click += new System.EventHandler(this.button4_Click);
+            // 
             // UniversityForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ctrlSave);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.ctrlAddStudent);
             this.Controls.Add(this.button3);
@@ -167,5 +179,6 @@ namespace WindowsFormsApp1.WUI {
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button ctrlAddStudent;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button ctrlSave;
     }
 }

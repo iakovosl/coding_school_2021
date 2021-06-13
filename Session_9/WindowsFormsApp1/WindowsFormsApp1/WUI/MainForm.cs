@@ -137,10 +137,15 @@ namespace WindowsFormsApp1 {
             // TODO: SERIALIZE UNIVERSITY OBJECT INSTEAD OF STUDENTS!
             string data = serializer.Serialize(Students);
 
-            string path = Path.Combine(Environment.CurrentDirectory, _JsonFile);
-            File.WriteAllText(path, data);
+            // TODO: SERIALIZE UNIVERSITY OBJECT INSTEAD OF Universty!
+            //string unidata = serializer.Serialize(Universities);
+
+            //string path = Path.Combine(Environment.CurrentDirectory, _JsonFile);
+            //File.WriteAllText(path, unidata);
 
         }
+
+
 
 
         private void DeserializeFromJson() {
@@ -225,6 +230,24 @@ namespace WindowsFormsApp1 {
         }
 
         private void ctrlInstituteList_SelectedIndexChanged(object sender, EventArgs e) {
+
+        }
+
+        private void UniSerializeToJson() {
+
+            JavaScriptSerializer serializer = new JavaScriptSerializer();
+
+            // TODO: SERIALIZE UNIVERSITY OBJECT INSTEAD OF Universty!
+            string unidata = serializer.Serialize(Universities);
+
+            string path = Path.Combine(Environment.CurrentDirectory, _JsonFile);
+            File.WriteAllText(path, unidata);
+        }
+
+
+        private void ctrlSerializeUni_Click(object sender, EventArgs e) {
+
+            UniSerializeToJson();
 
         }
     }
