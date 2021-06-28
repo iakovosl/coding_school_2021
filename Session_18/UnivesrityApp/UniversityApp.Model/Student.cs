@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace UniversityApp.Model {
-    class Students {
+    public class Student {
         public string Name { get; set; }
         public string Sutname { get; set; }
         public DateTime Birthdate { get; set; }
