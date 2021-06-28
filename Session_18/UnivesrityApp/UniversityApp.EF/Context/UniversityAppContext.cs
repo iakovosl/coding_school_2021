@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UniversityApp.EF.Configuration;
 using UniversityApp.Model;
 
 namespace UniversityApp.EF.Context {
@@ -19,6 +20,7 @@ namespace UniversityApp.EF.Context {
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder) {
+            modelBuilder.ApplyConfiguration(new UniversityConfiguration());
             base.OnModelCreating(modelBuilder);
         }
 
