@@ -1,6 +1,7 @@
 ﻿using System;
 
 namespace FibonacciCalculator {
-    public class Class1 {
+    public class FibonacciCalculator {
+
     }
 }
