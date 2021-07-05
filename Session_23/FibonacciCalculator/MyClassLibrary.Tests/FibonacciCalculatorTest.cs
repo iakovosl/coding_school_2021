@@ -2,7 +2,7 @@ using System;
 using Xunit;
 
 namespace MyClassLibrary.Tests {
-    public class UnitTest1 {
+    public class FibonacciCalculatorTest {
         [Fact]
         public void Test1() {
 
