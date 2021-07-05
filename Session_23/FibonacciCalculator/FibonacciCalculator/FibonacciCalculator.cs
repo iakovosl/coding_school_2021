@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace FibonacciCalculator
+namespace FibonacciClassLibrary
     {
     public class FibonacciCalculator : IFibonacciCalculator {
         public long FibonacciSeries(long n) {

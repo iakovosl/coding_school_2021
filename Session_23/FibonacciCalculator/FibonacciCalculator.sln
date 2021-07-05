@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FibonacciCalculator", "FibonacciCalculator\FibonacciCalculator.csproj", "{45AE2568-1D97-4450-B621-E90AA81FC33A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FibonacciClassLibrary", "FibonacciCalculator\FibonacciClassLibrary.csproj", "{45AE2568-1D97-4450-B621-E90AA81FC33A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyClassLibrary.Tests", "MyClassLibrary.Tests\MyClassLibrary.Tests.csproj", "{9C738285-7B91-49DD-B3E9-EAD373C76736}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyClassLibrary.Tests", "MyClassLibrary.Tests\MyClassLibrary.Tests.csproj", "{9C738285-7B91-49DD-B3E9-EAD373C76736}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
