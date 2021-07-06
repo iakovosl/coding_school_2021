@@ -4,9 +4,105 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+       
 </head>
+
 <body>
-    
+    <div class="main">
+        <div class="top">
+			<h3>Επεξεργασία Client</h3>
+			<img class="imgs" src="">
+			<img class="imgs" src="">
+		</div>
+        <form>			
+            <table>
+                <tr>
+                    <td>Client-Id:</td>
+                    <td><input class="w3-input w3-border w3-round" type="text" name="Client-Id"></td>
+                    
+                    
+                    <td>Όνομα:</td>
+                    <td><input class="w3-input w3-border w3-round" type="text" name="Name" placeholder="dcprojects_client"></td>
+                </tr>
+                
+                <tr><td><br></td></tr>
+                
+                <tr>
+                    <td>Τύπος:</td>
+                    <td>
+                        <select class="w3-select w3-border" name="option">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                          </select>
+                    </td>
+                    <td>Ενεργό:</td>
+                    <td><input id="checkbox" type="checkbox" name="Activate"></td>
+                </tr>
+                
+                <tr><td><br></td></tr>
+                
+                <tr>
+                    <td>Προέλευση:</td>
+                    <td>
+                        <select class="w3-select w3-border" name="option">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                          </select>
+                    </td>
+                
+                    <td>Εγκατάσταση:</td>
+                    <td>
+                        <select class="w3-select w3-border" name="option">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                          </select>
+                    </td>
+                </tr>
+                
+                <tr><td><br></td></tr>
+                
+                <tr>
+                    <td>Api Resources:</td>
+                    <td><input class="w3-input w3-border w3-round"type="text" name="Api"></td>
+                    
+                    <td>Sectret:</td>
+                    <td><input class="w3-input w3-border w3-round"type="text" name="Sectret"></td>
+                </tr>
+                
+                <tr><td><br></td></tr>
+                <tr><td><br></td></tr>
+                <tr><td><br></td></tr>
+                
+                <tr>
+                    <td>Δημιουργήθηκε από:</td>
+                    <td><input type="date" name="Created-by"></td>
+                    
+                    <td>Ημερομηνία δημιουργίας:</td>
+                    <td><input type="date" name="Created-by"></td>
+                </tr>
+                
+                <tr><td><br></td></tr>
+                
+                <tr>
+                    <td>Ενημερώθηκε από:</td>
+                    <td><input type="date" name="Updated-by"></td>
+                    
+                    <td>Ημερομηνία ενημέρωσης:</td>
+                    <td><input type="date" name="Updated-by"></td>
+                </tr>
+                
+            </table>
+        </form>
+    </div>
+
 </body>
 </html>
