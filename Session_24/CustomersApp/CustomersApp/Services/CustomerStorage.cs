@@ -12,7 +12,46 @@ namespace CustomersApp.Services {
         public ListCustomer GetById(int id);
     }
 
-    public class CustomerStorage { }
-        
-        
+    public class MemoryCustomerStorage : ICustomerStorage {
+        private List<ListCustomer> innerList { get; set; }
+
+        public MemoryCustomerStorage() {
+            innerList = new List<ListCustomer>();
+        }
+
+        public void AddItem(ListCustomer customer) {
+            if (customer.Id == 0) {
+                customer.Id = innerList.Count + 1;
+                innerList.Add(customer);
+                return;
+            }
+
+            var selectedCustomer = GetById(customer.Id);
+            selectedCustomer.Name = customer.Name;
+            selectedCustomer.Surname = customer.Surname;
+            selectedCustomer.AFM = customer.AFM;
+        }
+
+        public List<ListCustomer> GetAllCustomers() {
+            return innerList;
+        }
+
+        public ListCustomer GetById(int id) {
+            return innerList.FirstOrDefault(customer => customer.Id == id);
+        }
+
+        public void RemoveCustomer(int id) {
+            var selectedCustomer = GetById(id);
+            if (selectedCustomer == null)
+                throw new Exception(string.Format("Customer with id '{0}' was not found.", id));
+
+            innerList.Remove(selectedCustomer);
+        }
+
+        public void AddCustomer(ListCustomer customer) {
+            throw new NotImplementedException();
+        }
+    }
+
+
 }
