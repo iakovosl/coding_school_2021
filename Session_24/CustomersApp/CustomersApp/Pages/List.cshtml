@@ -6,8 +6,40 @@
 <a href="/Details/0">Add New</a>
 
 <span> Total @Model.MyList.Count customers</span>
-<ul>
-    @foreach(var customer in Model.MyList) {
-                <li>customer.Name</li>
-            }
+
+<ul id="lstList">
+    @foreach (var customer in Model.MyList) {
+        <li>@customer.Name</li>
+    }
 </ul>
+
+<table>
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Surname
+            </th>
+            <th>
+                AFM
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.MyList) {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Name</td>
+            <td>@item.Surname</td>
+            <td>@item.AFM</td>
+            <td><a href="Details/@item.Id">Edit</a></td>
+        </tr>
+        }
+    </tbody>
+</table>
