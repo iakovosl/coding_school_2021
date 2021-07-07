@@ -19,7 +19,7 @@ namespace CustomersApp.Services {
             innerList = new List<ListCustomer>();
         }
 
-        public void AddItem(ListCustomer customer) {
+        public void AddCustomer(ListCustomer customer) {
             if (customer.Id == 0) {
                 customer.Id = innerList.Count + 1;
                 innerList.Add(customer);
@@ -48,9 +48,7 @@ namespace CustomersApp.Services {
             innerList.Remove(selectedCustomer);
         }
 
-        public void AddCustomer(ListCustomer customer) {
-            throw new NotImplementedException();
-        }
+
     }
 
 

@@ -2,3 +2,12 @@
 @model CustomersApp.Pages.ListModel
 @{
 }
+
+<a href="/Details/0">Add New</a>
+
+<span> Total @Model.MyList.Count customers</span>
+<ul>
+    @foreach(var customer in Model.MyList) {
+                <li>customer.Name</li>
+            }
+</ul>
