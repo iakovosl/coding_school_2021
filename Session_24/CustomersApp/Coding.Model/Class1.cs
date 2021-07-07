@@ -1,7 +1,7 @@
 ﻿using System;
 
 namespace Coding.Model {
-    public class Customer {
+    public class ListCustomer {
         public int ID { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
